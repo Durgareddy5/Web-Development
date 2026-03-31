@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS_Arrays</title>
+    </head>
+    <body>
+        <script>
+            const arr = [10,20,30,"Car"];
+            arr[0] = "Mustafa";
+            console.log("Basic : ",arr);
+            const cars = ["Tata","Mahindra","Toyota","Ferrari"];
+            cars[0] = "MG";
+            let last = cars[cars.length - 1];
+            console.log("Second array");
+            for(let it of cars){
+                console.log("\t",it);
+            }
+            console.log("First : ",cars[0]);
+            console.log("Last : ",last);
+
+            //Objects
+
+            console.log("Objects \n");
+            const s1 = {"Name" : "Mustafa","Roll" : 173,"Section" : "IT-3"};
+            s1.Name = "Ghulam Mustafa";
+
+            for(let key in s1){
+                console.log("\t",key,":",s1[key]);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form_validation</title>
+        <script>
+            function validate_form(){
+                let x = document.getElementById('uname').value;
+                let y = document.getElementById('pwd').value;
+
+                if(x != y){
+                    alert('Invalid username or password');
+                    return false;
+                }
+                alert('Successfull Login');
+            }
+        </script>
+    </head>
+    <body>
+        <h4>160124737177</h4>
+        <form name="f1" onsubmit="return validate_form()" method="dialog">
+            <label for="uname">Username:</label>
+            <input type="text" id="uname" name="uname" required><br><br>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" required><br><br>
+            <input type="reset" value="Reset">  <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

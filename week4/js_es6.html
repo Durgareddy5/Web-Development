@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS_ES6_Features</title>
+    </head>
+    <body>
+        <script>
+            //function declaration
+            function hello(name){
+                return `Hello, ${name}!!!`;
+            }
+
+            let n = prompt("Enter your name");
+            alert(hello(n));
+
+            //Arrow functions
+            const add=(a,b,c)=>a+b+c;
+
+            console.log("Arrow(add) : ",add(10,20,30));
+
+            //function definition
+            const multi = function(a,b){
+                return a*b;
+            }
+
+            console.log("Definition(multi) : ",multi(5,15));
+        </script>
+    </body>
+</html>
