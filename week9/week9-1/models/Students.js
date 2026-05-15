@@ -1,16 +1,13 @@
-const mongoose=require('mongoose')
+const mongoose =require('mongoose');
+const {Schema, model}=mongoose;
 
-
-const studentschema=new mongoose.Schema({
-    roll:{
-        type:String,
-        required:true,
-        unique:true
-    },
+const studentSchema=new Schema({
+    roll:{type:String, required:true, unique:true},
     name:String,
     className:String
 });
 
-module.exports=mongoose.model('Student', studentschema);
+const Student=model('Student', studentSchema);
 
 
+module.exports=Student;
